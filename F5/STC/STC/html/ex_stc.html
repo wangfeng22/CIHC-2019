@@ -1,0 +1,122 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML is auto-generated from an M-file.
+To make changes, update the M-file and republish this document.
+      --><title>ex_stc</title><meta name="generator" content="MATLAB 7.9"><meta name="date" content="2010-12-07"><meta name="m-file" content="ex_stc"><style type="text/css">
+
+body {
+  background-color: white;
+  margin:10px;
+}
+
+h1 {
+  color: #990000; 
+  font-size: x-large;
+}
+
+h2 {
+  color: #990000;
+  font-size: medium;
+}
+
+/* Make the text shrink to fit narrow windows, but not stretch too far in 
+wide windows. */ 
+p,h1,h2,div.content div {
+  max-width: 600px;
+  /* Hack for IE6 */
+  width: auto !important; width: 600px;
+}
+
+pre.codeinput {
+  background: #EEEEEE;
+  padding: 10px;
+}
+@media print {
+  pre.codeinput {word-wrap:break-word; width:100%;}
+} 
+
+span.keyword {color: #0000FF}
+span.comment {color: #228B22}
+span.string {color: #A020F0}
+span.untermstring {color: #B20000}
+span.syscmd {color: #B28C00}
+
+pre.codeoutput {
+  color: #666666;
+  padding: 10px;
+}
+
+pre.error {
+  color: red;
+}
+
+p.footer {
+  text-align: right;
+  font-size: xx-small;
+  font-weight: lighter;
+  font-style: italic;
+  color: gray;
+}
+
+  </style></head><body><div class="content"><pre class="codeinput">clc; clear;
+
+n = 10^3;    <span class="comment">% size of the cover</span>
+alpha = 0.5; <span class="comment">% relative payload</span>
+h = 8;      <span class="comment">% constraint height - default is 10 - drives the complexity/quality tradeof</span>
+
+cover = uint8(rand(n, 1));
+m = round(n * alpha); <span class="comment">% number of message bits</span>
+message = uint8(rand(m, 1));
+profile = ones(n, 1);
+
+tic;
+[dist, stego] = stc_embed(cover, message, profile, h); <span class="comment">% embed message</span>
+
+fprintf(<span class="string">'distortion per cover element = %f\n'</span>, dist / n);
+fprintf(<span class="string">'        embedding efficiency = %f\n'</span>, alpha / (dist / n));
+fprintf(<span class="string">'                  throughput = %1.1f Kbits/sec\n'</span>, n / toc() / 1024);
+
+message2 = stc_extract(stego, m, h); <span class="comment">% extract message</span>
+<span class="keyword">if</span> all(message == message2)
+    disp(<span class="string">'Message has been extracted correctly.'</span>);
+<span class="keyword">else</span>
+    error(<span class="string">'Some error occured in the extraction process.'</span>);
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">distortion per cover element = 0.119000
+        embedding efficiency = 4.201681
+                  throughput = 473.1 Kbits/sec
+Message has been extracted correctly.
+</pre><p class="footer"><br>
+      Published with MATLAB&reg; 7.9<br></p></div><!--
+##### SOURCE BEGIN #####
+clc; clear;
+
+n = 10^3;    % size of the cover
+alpha = 0.5; % relative payload
+h = 8;      % constraint height - default is 10 - drives the complexity/quality tradeof
+
+cover = uint8(rand(n, 1));
+m = round(n * alpha); % number of message bits
+message = uint8(rand(m, 1));
+profile = ones(n, 1);
+
+tic;
+[dist, stego] = stc_embed(cover, message, profile, h); % embed message
+
+fprintf('distortion per cover element = %f\n', dist / n);
+fprintf('        embedding efficiency = %f\n', alpha / (dist / n));
+fprintf('                  throughput = %1.1f Kbits/sec\n', n / toc() / 1024);
+
+message2 = stc_extract(stego, m, h); % extract message
+if all(message == message2)
+    disp('Message has been extracted correctly.');
+else
+    error('Some error occured in the extraction process.');
+end
+
+##### SOURCE END #####
+--></body></html>
