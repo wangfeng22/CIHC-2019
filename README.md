@@ -50,7 +50,9 @@ Chinese Information Hiding Competition）`
 `隐写`、`隐写分析`、`深度学习`
 
 **隐写**：隐写术是一门关于信息隐藏的技巧与科学，所谓信息隐藏指的是不让除预期的接收者之外的任何人知晓信息的传递事件或者信息的内容。 [wiki](https://zh.wikipedia.org/wiki/%E9%9A%90%E5%86%99%E6%9C%AF)
+
 **隐写分析**：隐写分析（steganalysis）是指在已知或未知嵌入算法的情况下，从观察到的数据检测判断其中是否存在秘密信息，分析数据量的大小和数据嵌入的位置，并最终破解嵌入内容的过程。[baidu](https://baike.baidu.com/item/%E9%9A%90%E5%86%99%E5%88%86%E6%9E%90)
+
 **深度学习**: 深度学习（英语：deep learning）是机器学习的分支，是一种以人工神经网络为架构，对数据进行表征学习的算法。 [wiki](https://zh.wikipedia.org/wiki/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0)
 
 ### 学习目标：
