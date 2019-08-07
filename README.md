@@ -6,7 +6,7 @@ Chinese Information Hiding Competition）`
 
 - [x] **作品**: `图像隐写检测`
 
-- [x] **要求**:
+- [x] [**要求**:](https://github.com/wangfeng22/CIHC-2019/blob/master/%E7%AC%AC%E4%B8%80%E5%B1%8A%E5%85%A8%E5%9B%BD%E4%BF%A1%E6%81%AF%E9%9A%90%E8%97%8F%E5%A4%A7%E8%B5%9B%E9%80%9A%E7%9F%A5.pdf)
 
   - 时间：在规定时间内(2019年6月15日 — 2019年10月1日)在网站上的[【比赛提交】栏目](http://www.cihw.org.cn/ )提交结果.
 
@@ -36,9 +36,9 @@ Chinese Information Hiding Competition）`
 
 |  隐写算法   |    相关论文                |
 | :--------- | :------------------------- |
-| J_unward   | V. Holub, J. Fridrich, T. Denemark, Universal Distortion Function for Steganography in an Arbitrary Domain, EURASIP Journal on Information Security |
-| nsF5       | J. Fridrich, T. Pevný, and J. Kodovský, Statistically undetectable JPEG steganography: Dead ends, challenges, and opportunities. |
-| UERD       | Using Statistical Image Model for JPEG Steganography: Uniform Embedding Revisited|
+| [J_unward](https://github.com/wangfeng22/CIHC-2019/blob/master/J_UNIWARD.pdf)   | V. Holub, J. Fridrich, T. Denemark, Universal Distortion Function for Steganography in an Arbitrary Domain, EURASIP Journal on Information Security |
+| [nsF5](https://github.com/wangfeng22/CIHC-2019/blob/master/nsF5.pdf)       | J. Fridrich, T. Pevný, and J. Kodovský, Statistically undetectable JPEG steganography: Dead ends, challenges, and opportunities. |
+| [UERD](https://github.com/wangfeng22/CIHC-2019/blob/master/UERD.pdf)       | Using Statistical Image Model for JPEG Steganography: Uniform Embedding Revisited|
 
 - [x] `辅助训练集和验证集：`
 
