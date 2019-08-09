@@ -61,3 +61,9 @@ Chinese Information Hiding Competition）`
 + 1. 提取目标有效特征
 + 2. 训练神经网络
 ```
+
+### 隐写算法详解：
+中文详解，100%抄袭，欢迎指正。
+- [nsF5](https://odinaris.github.io/2019/06/27/JPEG%E9%9A%90%E5%86%99%E6%9C%AF%E4%B9%8BF5%E3%80%81-F5%E5%92%8CnsF5/#more)
+- [UERD](https://odinaris.github.io/2019/07/02/JPEG%E9%9A%90%E5%86%99%E6%9C%AF%E4%B9%8BUERD/#more)
+- [J-UNIWARD](https://odinaris.github.io/2019/06/26/JPEG%E9%9A%90%E5%86%99%E6%9C%AF%E4%B9%8BJ-UNIWARD/)
