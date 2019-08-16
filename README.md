@@ -63,7 +63,7 @@ Chinese Information Hiding Competition）`
 ```
 
 ### 隐写算法详解：
-中文详解，100%引用(chao xi)，欢迎指正。
+中文详解，100%引用(bai piao)，欢迎指正。
 - [nsF5](https://odinaris.github.io/2019/06/27/JPEG%E9%9A%90%E5%86%99%E6%9C%AF%E4%B9%8BF5%E3%80%81-F5%E5%92%8CnsF5/#more)
 - [UERD](https://odinaris.github.io/2019/07/02/JPEG%E9%9A%90%E5%86%99%E6%9C%AF%E4%B9%8BUERD/#more)
 - [J-UNIWARD](https://odinaris.github.io/2019/06/26/JPEG%E9%9A%90%E5%86%99%E6%9C%AF%E4%B9%8BJ-UNIWARD/)
