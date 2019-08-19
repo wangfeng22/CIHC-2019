@@ -1,0 +1,6 @@
+train:  python main.py --input_height 512 --input_width 512 --output_height 512 --output_width 512 --dataset img512 --crop  --train --epoch 300 --input_fname_pattern "*.jpg"
+
+
+
+
+read:   python main.py  --output_height 512 --output_width 512 --dataset img512 --crop
